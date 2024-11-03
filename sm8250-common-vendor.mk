@@ -344,8 +344,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libmultiviewspin_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmultiviewspin_interface.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libmultiviewzoom_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmultiviewzoom_interface.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libnative-api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnative-api.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_common.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpu.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemaids_vendor.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
@@ -391,16 +389,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib/libsec_semRil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec_semRil.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudiocoreutils.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudioinfo.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsecfr_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecfr_engine.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsecfr_model.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecfr_model.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecnativefeature.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib/libsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecril-client.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsegmentationeffect.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsegmentationeffect.uniplugin@1.0.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsegmentationeffect_capture.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsegmentationeffect_capture.uniplugin@1.0.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsemnativecarrierfeature.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistener.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
@@ -759,6 +754,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnative-api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnative-api.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnetmgr_datapath_proxy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_datapath_proxy.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnetmgr_sscm3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_sscm3.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnetmgr_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_utils.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnetmgrmodemproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgrmodemproxy.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnetmgrportutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgrportutils.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnetmgrxfrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgrxfrmutils.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpu.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemaids_vendor.so \
@@ -964,9 +965,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.bluetooth@2.0.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge@2.0.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge@2.1.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel@2.0.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio-V1-ndk.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 PRODUCT_PACKAGES += \
