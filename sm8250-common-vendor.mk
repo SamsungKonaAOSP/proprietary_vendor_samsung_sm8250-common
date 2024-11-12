@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
@@ -91,10 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/firmware/cs40l25a_clab.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l25a_clab.bin \
     vendor/samsung/sm8250-common/proprietary/vendor/firmware/cs40l25a_clab.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l25a_clab.wmfw \
     vendor/samsung/sm8250-common/proprietary/vendor/firmware/cs40l25a_exc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l25a_exc.bin \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/camera/f_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/f_dual_calibration.bin \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
@@ -106,6 +103,198 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/camera/w_tof_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/w_tof_calibration.bin
 
 PRODUCT_PACKAGES += \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    ftm_fm_lib \
+    audio.a2dpsink.default \
+    audio.sec_primary.default \
+    vendor.qti.hardware.audiohalext@1.0-impl \
+    vendor.qti.hardware.qseecom@1.0-impl \
+    vendor.samsung.hardware.audio@1.0-impl \
+    vendor.samsung.hardware.bluetooth.a2dpsink@1.0-impl \
+    vulkan.adreno \
+    libC2D2 \
+    libCB \
+    libGPreqcancel \
+    libGPreqcancel_svc \
+    libOmxAacDec \
+    libOmxAlacDec \
+    libOmxAmrDec \
+    libOmxAmrwbplusDec \
+    libOmxApeDec \
+    libOmxEvrcDec \
+    libOmxG711Dec \
+    libOmxQcelp13Dec \
+    libOmxVpp \
+    libOmxWmaDec \
+    libOpenCL \
+    libQSEEComAPI \
+    libVkLayer_q3dtools \
+    lib_SoundAlive_3DPosition_ver202 \
+    lib_SoundAlive_AlbumArt_ver105 \
+    lib_SoundAlive_play_plus_ver400 \
+    lib_SoundBooster_ver1050 \
+    libadreno_utils \
+    libadsp_default_listener \
+    libadsprpc \
+    libaudioconfigstore \
+    libaudioparsers \
+    libbase64 \
+    libbluetooth_a2dpsink_session \
+    libc2d30_bltlib \
+    libcdsp_default_listener \
+    libcdsprpc \
+    libconfigdb \
+    libcpion \
+    libdiag \
+    libdiagjni \
+    libdrmfs \
+    libdrmtime \
+    libdsutils \
+    libegis_fp_normal_sensor_test \
+    libfastcvdsp_stub \
+    libfastcvopt \
+    libfloatingfeature \
+    libgpudataproducer \
+    libgsl \
+    libhta_hexagon_runtime \
+    libidl \
+    libkeymasterdeviceutils \
+    libkeymasterutils \
+    libllvm-glnext \
+    libllvm-qcom \
+    libmdmdetect \
+    libmdsprpc \
+    libminkdescriptor \
+    libminksocket \
+    libmmosal \
+    libmulawdec \
+    libnative-api \
+    libnpu \
+    liboemaids_vendor \
+    liboemcrypto \
+    libopenvx \
+    libops \
+    libpdmapper \
+    libpdnotifier \
+    libperfconfig \
+    libperfgluelayer \
+    libprofileparamstorage \
+    libqcbor \
+    libqcci_legacy \
+    libqcmaputils \
+    libqdi \
+    libqdp \
+    libqisl \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_helper \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
+    libqmi_csvt_srvc \
+    libqmi_encdec \
+    libqmi_legacy \
+    libqmiservices \
+    libqrtr \
+    libqsocket \
+    libqti-util \
+    libqtigef \
+    libqtikeymaster4 \
+    librpmb \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectSegmentation_stub \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
+    libsdsprpc \
+    libsecaudiocoreutils \
+    libsecaudioinfo \
+    libsecnativefeature \
+    libsi \
+    libsnap_vndk \
+    libspatializerparamstorage \
+    libspcom \
+    libspeakercalibration \
+    libspl \
+    libssd \
+    libsynaFpSensorTestNwd \
+    libsysmon_cdsp_skel \
+    libsystem_health_mon \
+    libthermalclient \
+    libtime_genoff \
+    libtrustedapploader \
+    libtzdrmgenprov \
+    libvppclient \
+    libvpphcp \
+    libvpphvx \
+    libvpplibrary \
+    libxml \
+    libasphere \
+    libaudioeffectoffload \
+    libaudiosaplus_sec \
+    libmysound \
+    libmyspace \
+    libplaybackrecorder \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
+    libshoebox \
+    libswdap \
+    libswspatializer \
+    spatializer-aidl-V1-cpp \
+    unnhal-acc-hta \
+    vendor.qti.data.slm@1.0 \
+    vendor.qti.esepowermanager@1.0 \
+    vendor.qti.hardware.audiohalext@1.0 \
+    vendor.qti.hardware.data.cne.internal.constants@1.0 \
+    vendor.qti.hardware.data.cne.internal.server@1.0 \
+    vendor.qti.hardware.data.connection@1.0 \
+    vendor.qti.hardware.data.connection@1.1 \
+    vendor.qti.hardware.data.dynamicdds@1.0 \
+    vendor.qti.hardware.data.latency@1.0 \
+    vendor.qti.hardware.data.qmi@1.0 \
+    vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.qseecom@1.0 \
+    vendor.qti.hardware.scve.objecttracker@1.0 \
+    vendor.qti.hardware.scve.panorama@1.0 \
+    vendor.qti.hardware.tui_comm@1.0 \
+    vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.2 \
+    vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.hardware.wigig.netperftuner@1.0 \
+    vendor.qti.latency@2.0 \
+    vendor.samsung.hardware.audio@1.0 \
+    vendor.samsung.hardware.bluetooth.a2dpsink@1.0 \
+    vendor.samsung.hardware.thermal@1.0 \
+    libOmxDsdDec \
+    lib_SamsungRec_07020 \
+    lib_SoundAlive_SRC384_ver320 \
+    lib_soundaliveresampler \
+    libadm \
+    libadpcmdec \
+    libaudio_log_utils \
+    libaudio_soundtrigger \
+    libcppf \
+    libdrc \
+    libdsd2pcm \
+    libfastcrc \
+    libhdmipassthru \
+    librecordalive \
+    libsamsungVoipResampler \
+    libsmwrapper \
+    libstreamparser \
+    libsurround_3mic_proc \
+    libvideoutils \
+    libwvhidl \
+    libwvdrmengine \
+    vendor.qti.hardware.fingerprint@1.0 \
     btaudio_offload_if \
     com.qti.eeprom.truly_cmb433 \
     com.samsung.sensor.hi847 \
@@ -124,84 +313,62 @@ PRODUCT_PACKAGES += \
     com.samsung.sensor.s5kgw2 \
     com.samsung.sensor.s5khm1 \
     cdsp_face \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    ftm_fm_lib \
+    com.qualcomm.qti.ant@1.0 \
+    android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
-    audio.a2dpsink.default \
-    audio.sec_primary.default \
-    vendor.qti.hardware.audiohalext@1.0-impl \
+    gatekeeper.mdfpp \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.qseecom@1.0-impl \
-    vendor.samsung.hardware.audio@1.0-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
+    vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.samsung.hardware.bluetooth.a2dp@1.0-impl \
-    vendor.samsung.hardware.bluetooth.a2dpsink@1.0-impl \
     vendor.samsung.hardware.gnss@2.0-impl-sec \
-    vulkan.adreno \
-    libC2D2 \
-    libCB \
+    libDLInterface.camera.samsung \
     libDVTracking_interface \
     libDepthBokehVideo_interface \
     libDeviceInfoProvider \
-    libGPreqcancel \
-    libGPreqcancel_svc \
+    libFrucDYNVLib \
+    libGPQTEEC_vendor \
+    libGPTEE_vendor \
     libHDRVerifier_v1.camera.samsung \
     libHandGesture.camera.samsung \
     libHprVisualEffect \
     libHumanSegVideoModel_Vendor \
     libIDDQD_core \
     libIDDQD_interface \
+    libLocalTM_capture_core.camera.samsung \
+    libLocalTM_preview_core \
+    libLocalTM_wrapper.camera.samsung \
     libMoonVerifier_v1.camera.samsung \
     libMultiROIDetector.camera.samsung \
     libObjectDetector_v1.camera.samsung \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxVpp \
-    libOmxWmaDec \
-    libOpenCL \
     libOpenCv.camera.samsung \
     libPersonal_core.camera.samsung \
     libPersonal_interface \
     libPetDetector_interface \
     libQ6MSFR_manager_stub \
-    libQSEEComAPI \
+    libQTEEConnector_vendor \
     libRelighting_API.camera.samsung \
+    libSNPE \
     libSSMAutoTrigger_interface \
     libSSM_AutoTrigger \
     libSceneDetector_v1.camera.samsung \
-    libVkLayer_q3dtools \
-    lib_SoundAlive_3DPosition_ver202 \
-    lib_SoundAlive_AlbumArt_ver105 \
-    lib_SoundAlive_play_plus_ver400 \
-    lib_SoundBooster_ver1050 \
-    libadreno_utils \
-    libadsp_default_listener \
-    libadsprpc \
+    libSecureUILib \
+    libSemDataProps \
+    libSemTelephonyProps \
+    libStDrvInt \
     libarcsoft_aieffectpk_video \
     libarcsoft_aieffectpk_video_bokeh \
     libarcsoft_aieffectpk_video_plight \
+    libarcsoft_deflicker_native \
     libarcsoft_dualcam_portraitlighting \
     libarcsoft_dualcam_portraitlighting_preview \
     libarcsoft_multi_frame_video_hdr \
     libarcsoft_object_tracking \
-    libaudioconfigstore \
-    libaudioparsers \
-    libbase64 \
     libbatching \
-    libbluetooth_a2dpsink_session \
     libbluetooth_audio_session_qti \
     libbtnv \
-    libc2d30_bltlib \
+    libc++_shared \
+    libcacertclient \
     libcamera_nn_stub \
     libcamxfacialfeatures \
     libcamxfdalgo \
@@ -213,27 +380,26 @@ PRODUCT_PACKAGES += \
     libcapiv2svacnn \
     libcapiv2svarnn \
     libcapiv2vop \
-    libcdsp_default_listener \
-    libcdsprpc \
+    libcdfw \
+    libcdfw_remote_api \
     libchilog \
     libcodecsolutionhelper_vendor \
     libcom.qti.chinodeutils \
-    libconfigdb \
-    libcpion \
+    libcvp2 \
+    libcvp2_hfi \
+    libcvp_common \
+    libcvpcpuRev_skel \
     libdataitems \
-    libdiag \
-    libdiagjni \
+    libdeccfg \
+    libdisp-aba \
+    libdisplayqos \
     libdisplayskuutils \
-    libdrmfs \
-    libdrmtime \
+    libdpps \
     libdsi_netctrl \
-    libdsutils \
-    libegis_fp_normal_sensor_test \
+    libdualcam_refocus_video \
     libengine_did \
+    libengmode_client \
     libexifa.camera.samsung \
-    libfastcvdsp_stub \
-    libfastcvopt \
-    libfloatingfeature \
     libfocuspeaking \
     libfocuspeaking_interface \
     libgarden \
@@ -241,278 +407,46 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgnsspps \
     libgps.utils \
-    libgpudataproducer \
-    libgsl \
     libhand_interaction.uniplugin@1.0 \
     libhandgesture.arcsoft \
+    libhdcp1prov \
+    libhdcp2p2prov \
+    libhdcpsrm \
     libhdr_tm \
+    libhdrdynamic \
     libhdrdynamicootf \
     libheifcapture \
-    libhta_hexagon_runtime \
-    libidl \
+    libhexagon_nn_stub \
+    libhta \
+    libhypervintf \
     libimage_enhancement.arcsoft \
     libimagecodec_native.quram \
     libipebpsstriping \
     libizat_client_api \
     libizat_core \
+    libjnihelper \
     libjpegQtable_interface \
-    libkeymasterdeviceutils \
-    libkeymasterutils \
-    libllvm-glnext \
-    libllvm-qcom \
+    libkeymaster_helper \
+    liblbs_core \
+    liblearningmodule \
+    libloadalgo_stub \
+    libloc_api_v02 \
     libloc_core \
     libloc_socket \
     liblocation_api \
     liblocationservice \
     liblocationservice_glue \
     liblowi_client \
-    libmdmdetect \
-    libmdsprpc \
-    libminkdescriptor \
-    libminksocket \
-    libmmcamera_faceproc \
-    libmmcamera_faceproc2 \
-    libmmosal_vendor \
-    libmpbase \
-    libmulawdec \
-    libmultiobject_tracker \
-    libmultiviewspin_interface \
-    libmultiviewzoom_interface \
-    libnative-api \
-    libnpu \
-    liboemaids_vendor \
-    liboemcrypto \
-    libopenvx \
-    libops \
-    libos \
-    libpadm \
-    libpdmapper \
-    libpdnotifier \
-    libperfconfig \
-    libperfgluelayer \
-    libprofileparamstorage \
-    libqcbor \
-    libqcc_file_agent \
-    libqcci_legacy \
-    libqcmaputils \
-    libqdi \
-    libqdma_file_agent \
-    libqdp \
-    libqisl \
-    libqmi \
-    libqmi_cci \
-    libqmi_client_helper \
-    libqmi_client_qmux \
-    libqmi_common_so \
-    libqmi_csi \
-    libqmi_csvt_srvc \
-    libqmi_encdec \
-    libqmi_legacy \
-    libqmiservices \
-    libqrtr \
-    libqsocket \
-    libqti-util \
-    libqti_vndfwk_detect \
-    libqtigef \
-    libqtikeymaster4 \
-    librpmb \
-    libsaiv_BeautySolutionVideo \
-    libsavscmn \
-    libsavsvc \
-    libscenedetector.uniplugin@1.0 \
-    libscveCommon \
-    libscveCommon_stub \
-    libscveObjectSegmentation \
-    libscveObjectSegmentation_stub \
-    libscveObjectTracker \
-    libscveObjectTracker_stub \
-    libsdsprpc \
-    libsecaudiocoreutils \
-    libsecaudioinfo \
-    libsecfr_engine \
-    libsecfr_model \
-    libsecnativefeature \
-    libsegmentationeffect.uniplugin@1.0 \
-    libsegmentationeffect_capture.uniplugin@1.0 \
-    libsensorlistener \
-    libsensorndkbridge \
-    libsensorslog \
-    libshotsuggestion \
-    libshotsuggestion_engines \
-    libsi \
-    libsmartfocus_interface \
-    libsns_device_mode_stub \
-    libsns_fastRPC_util \
-    libsns_low_lat_stream_stub \
-    libsns_registry_skel \
-    libsnsapi \
-    libsnsdiaglog \
-    libsocial_image_enhancement.uniplugin@1.0 \
-    libspatializerparamstorage \
-    libspcom \
-    libspeakercalibration \
-    libspl \
-    libsrib_CNNInterface.camera.samsung \
-    libsrib_humanaware_engine.camera.samsung \
-    libssc \
-    libssc_default_listener \
-    libssd \
-    libssengine.uniplugin@1.0 \
-    libstagefright_foundation_vendor \
-    libstork_shared \
-    libsubsystem_control \
-    libswldc_capture_core.camera.samsung \
-    libswregistrationalgo \
-    libsynaFpSensorTestNwd \
-    libsynergy_loc_api \
-    libsynx \
-    libsysmon_cdsp_skel \
-    libsystem_health_mon \
-    libthermalclient \
-    libthreadutils \
-    libtrustedapploader \
-    libtzdrmgenprov \
-    libuniplugin \
-    libvideobeauty.arcsoft \
-    libvideobeauty.uniplugin@1.0 \
-    libvideobeauty_interface \
-    libvideotransitioneffect_roll.arcsoft \
-    libvideotransitioneffect_zoom.arcsoft \
-    libvppclient \
-    libvpphcp \
-    libvpphvx \
-    libvpplibrary \
-    libxml \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
-    libasphere \
-    libaudioeffectoffload \
-    libaudiosaplus_sec \
-    libmysound \
-    libmyspace \
-    libplaybackrecorder \
-    libqcbassboost \
-    libqcreverb \
-    libqcvirt \
-    libshoebox \
-    libswdap \
-    libswspatializer \
-    spatializer-aidl-V1-cpp \
-    unihal_uniplugin@1.0 \
-    unnhal-acc-hta \
-    vendor.qti.data.slm@1.0 \
-    vendor.qti.esepowermanager@1.0 \
-    vendor.qti.gnss@1.0 \
-    vendor.qti.gnss@1.1 \
-    vendor.qti.gnss@1.2 \
-    vendor.qti.gnss@2.0 \
-    vendor.qti.gnss@2.1 \
-    vendor.qti.gnss@3.0 \
-    vendor.qti.gnss@4.0 \
-    vendor.qti.hardware.audiohalext@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.camera.postproc@1.0-service-impl \
-    vendor.qti.hardware.camera.postproc@1.0 \
-    vendor.qti.hardware.data.cne.internal.constants@1.0 \
-    vendor.qti.hardware.data.cne.internal.server@1.0 \
-    vendor.qti.hardware.data.connection@1.0 \
-    vendor.qti.hardware.data.connection@1.1 \
-    vendor.qti.hardware.data.dynamicdds@1.0 \
-    vendor.qti.hardware.data.latency@1.0 \
-    vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fm@1.0 \
-    vendor.qti.hardware.qccsyshal@1.0 \
-    vendor.qti.hardware.qseecom@1.0 \
-    vendor.qti.hardware.scve.objecttracker@1.0 \
-    vendor.qti.hardware.scve.panorama@1.0 \
-    vendor.qti.hardware.tui_comm@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
-    vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.hardware.wigig.netperftuner@1.0 \
-    vendor.qti.latency@2.0 \
-    vendor.samsung.hardware.audio@1.0 \
-    vendor.samsung.hardware.bluetooth.a2dp@1.0 \
-    vendor.samsung.hardware.bluetooth.a2dpsink@1.0 \
-    vendor.samsung.hardware.gnss@2.0 \
-    vendor.samsung.hardware.thermal@1.0 \
-    vintf-codecsolution-V2-ndk_platform \
-    com.qualcomm.qti.ant@1.0 \
-    libFrucSSMLib \
-    libOmxDsdDec \
-    lib_SoundAlive_SRC384_ver320 \
-    lib_soundaliveresampler \
-    liba2dpoffload \
-    libadm \
-    libadpcmdec \
-    libaudio_log_utils \
-    libaudio_soundtrigger \
-    libcirrusspkrprot \
-    libcomprcapture \
-    libcppf \
-    libdrc \
-    libdsd2pcm \
-    libexthwplugin \
-    libfastcrc \
-    libgaya \
-    libhdmiedid \
-    libhdmipassthru \
-    libhfp \
-    libpredeflicker_native \
-    libsamsungVoipResampler \
-    libsmwrapper \
-    libsndmonitor \
-    libspkrprot \
-    libstreamparser \
-    libsurround_3mic_proc \
-    libvideoutils \
-    libwvhidl \
-    libwvdrmengine \
-    vendor.qti.hardware.fingerprint@1.0 \
-    com.qualcomm.qti.ant@1.0_vendor \
-    gatekeeper.mdfpp \
-    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
-    vendor.qti.hardware.qteeconnector@1.0-impl \
-    libDLInterface.camera.samsung \
-    libFrucDYNVLib \
-    libGPQTEEC_vendor \
-    libGPTEE_vendor \
-    libQTEEConnector_vendor \
-    libSNPE \
-    libSecureUILib \
-    libSemDataProps \
-    libSemTelephonyProps \
-    libStDrvInt \
-    libarcsoft_deflicker_native \
-    libc++_shared \
-    libcacertclient \
-    libcdfw \
-    libcdfw_remote_api \
-    libcvp2 \
-    libcvp2_hfi \
-    libcvp_common \
-    libcvpcpuRev_skel \
-    libdeccfg \
-    libdisp-aba \
-    libdisplayqos \
-    libdpps \
-    libengmode_client \
-    libhdcp1prov \
-    libhdcp2p2prov \
-    libhdcpsrm \
-    libhdrdynamic \
-    libhexagon_nn_stub \
-    libhta \
-    libhypervintf \
-    libjnihelper \
-    libkeymaster_helper \
-    liblearningmodule \
-    libloadalgo_stub \
+    liblowi_wifihal \
     libmdmimgload \
     libmeters \
     libmm-hdcpmgr \
+    libmmcamera_faceproc \
+    libmmcamera_faceproc2 \
+    libmpbase \
+    libmultiobject_tracker \
+    libmultiviewspin_interface \
+    libmultiviewzoom_interface \
     libnanopb \
     libnetmgr \
     libnetmgr_common \
@@ -523,12 +457,21 @@ PRODUCT_PACKAGES += \
     libnetmgrportutils \
     libnetmgrxfrmutils \
     libnlnetmgr \
+    libofflinelog \
+    libos \
+    libpadm \
     libperipheral_client \
+    libqcc_file_agent \
+    libqdma_file_agent \
     libqmiservices-ext \
     libqmiservices-sem-ext \
     libqseed3 \
     libreffeature \
     libril_sem \
+    libsaiv_BeautySolutionVideo \
+    libsavscmn \
+    libsavsvc \
+    libscenedetector.uniplugin@1.0 \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-diag \
@@ -536,26 +479,61 @@ PRODUCT_PACKAGES += \
     libsdmextension \
     libsec-ril \
     libsec_semRil \
-    libsecril-client \
+    libsecfr_engine \
+    libsecfr_model \
+    libsecril-client_vendor \
     libsecureui \
     libsecureui_svcsock \
+    libsegmentationeffect.uniplugin@1.0 \
+    libsegmentationeffect_capture.uniplugin@1.0 \
     libsemnativecarrierfeature \
+    libsensorlistener \
+    libsensorndkbridge \
+    libsensorslog \
+    libshotsuggestion \
+    libshotsuggestion_engines \
     libshsc \
     libskeymaster4device \
+    libsmartfocus_interface \
     libsnap_compute \
     libsnap_compute_wrapper \
     libsnap_v1.samsung \
-    libsnap_vndk \
     libsnaplite_native \
     libsnaplite_wrapper \
     libsnpe_dsp_domains_v2 \
     libsnpe_wrapper \
+    libsns_device_mode_stub \
+    libsns_fastRPC_util \
+    libsns_low_lat_stream_stub \
+    libsns_registry_skel \
+    libsnsapi \
+    libsnsdiaglog \
     libsoc_helper \
     libsoc_helper_jni \
-    libtime_genoff \
+    libsocial_image_enhancement.uniplugin@1.0 \
+    libsrib_CNNInterface.camera.samsung \
+    libsrib_humanaware_engine.camera.samsung \
+    libssc \
+    libssc_default_listener \
+    libssengine.uniplugin@1.0 \
+    libstagefright_foundation_vendor \
+    libstork_shared \
+    libsubsystem_control \
+    libswldc_capture_core.camera.samsung \
+    libswregistrationalgo \
+    libsynergy_loc_api \
+    libsynx \
+    libthreadutils \
     libtinyxml2_1 \
     libtswrappercommon \
+    libuniplugin \
+    libvideobeauty.arcsoft \
+    libvideobeauty.uniplugin@1.0 \
+    libvideobeauty_interface \
+    libvideotransitioneffect_roll.arcsoft \
+    libvideotransitioneffect_zoom.arcsoft \
     libvkmanager_vendor \
+    unihal_uniplugin@1.0 \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hvx \
@@ -566,22 +544,34 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
+    vendor.qti.gnss@1.0 \
+    vendor.qti.gnss@1.1 \
+    vendor.qti.gnss@1.2 \
+    vendor.qti.gnss@2.0 \
+    vendor.qti.gnss@2.1 \
+    vendor.qti.gnss@3.0 \
+    vendor.qti.gnss@4.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
-    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.cvp@1.0 \
+    vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.uim_remote_client@1.0 \
     vendor.qti.hardware.radio.uim_remote_client@1.1 \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
+    vendor.samsung.hardware.bluetooth.a2dp@1.0 \
     vendor.samsung.hardware.bluetooth@2.0 \
+    vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.hyper-V2-ndk_platform \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
     vendor.samsung.hardware.radio.channel-V1-ndk \
     vendor.samsung.hardware.radio.data-V1-ndk \
     vendor.samsung.hardware.radio.messaging-V1-ndk \
-    vendor.samsung.hardware.radio.network-V1-ndk \
     vendor.samsung.hardware.radio.sim-V1-ndk \
+    vintf-codecsolution-V2-ndk_platform \
     capi_v2_aptX_CLHDAD_Encoder \
     libQ6MSFR_manager_skel \
     libapps_mem_heap \
@@ -608,12 +598,12 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.thermal@1.0-manifest.xml \
     adpl \
     adsprpcd \
-    audioflacapp \
     cdsprpcd \
     dspservice \
     hdcp1prov \
     hdcp2p2prov \
     hvdcp_opti \
+    android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.keymaster@4.0-strongbox-service-qti \
